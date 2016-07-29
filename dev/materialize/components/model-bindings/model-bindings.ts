@@ -2,8 +2,8 @@ import {Component} from "@angular/core";
 import {Option} from "./option";
 import {MaterialInput} from "./input";
 import {MaterialSelect} from "./select";
-import {MaterializeDirective} from "../../../src/index";
-import * as Materialize from "../../../src/index";
+import {MaterializeDirective} from "../../index";
+import * as Materialize from "../../index";
 import "rxjs";
 import {Observable} from "rxjs/Observable";
 

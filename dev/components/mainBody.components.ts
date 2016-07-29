@@ -6,6 +6,7 @@ import {Buttons} from "../materialize/components/buttons";
 import {Dropdown} from "../materialize/components/dropdown";
 import {Forms} from "../materialize/components/forms";
 import {Tabs} from "../materialize/components/tabs";
+//import {ModelBindings} from "../materialize/components/model-bindings/model-bindings";
 
 @Component({
   selector: 'mainBody',
@@ -84,7 +85,6 @@ import {Tabs} from "../materialize/components/tabs";
         <div class="row">
           <tabs></tabs>
         </div>
-
 
 
       </div>

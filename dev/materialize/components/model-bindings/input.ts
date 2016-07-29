@@ -1,6 +1,6 @@
 import {Component, EventEmitter} from "@angular/core";
-import {MaterializeDirective} from "../../../src/index";
-import * as Materialize from "../../../src/index";
+import {MaterializeDirective} from "../../index";
+import * as Materialize from "../../index";
 
 @Component({
     selector: "materialInput",
