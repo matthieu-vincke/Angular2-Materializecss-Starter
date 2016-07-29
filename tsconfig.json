@@ -30,6 +30,7 @@
     "./dev/components/mainBody.components.ts",
     "./dev/materialize/components/datepicker.ts",
     "./dev/materialize/custom-event-polyfill.ts",
-    "./dev/materialize/materialize-directive.ts"
+    "./dev/materialize/materialize-directive.ts",
+    "./dev/tests/mainBody.components.ts"
   ]
 }
