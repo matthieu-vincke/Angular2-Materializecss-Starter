@@ -1,4 +1,4 @@
-import {MaterializeDirective} from "../materialize-directive";
+import {MaterializeDirective} from "../index";
 import {Component} from "@angular/core"
 
 @Component({
@@ -18,4 +18,7 @@ import {Component} from "@angular/core"
       </form>
     `
 })
-export class DatePicker {}
+export class DatePicker {
+  constructor(){
+  }
+}

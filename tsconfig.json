@@ -28,9 +28,22 @@
     "./dev/components/footer.component.ts",
     "./dev/components/header.component.ts",
     "./dev/components/mainBody.components.ts",
+    "./dev/materialize/components/buttons.ts",
+    "./dev/materialize/components/collapsible.ts",
     "./dev/materialize/components/datepicker.ts",
+    "./dev/materialize/components/dialogs.ts",
+    "./dev/materialize/components/dropdown.ts",
+    "./dev/materialize/components/forms.ts",
+    "./dev/materialize/components/model-bindings/input.ts",
+    "./dev/materialize/components/model-bindings/model-bindings.ts",
+    "./dev/materialize/components/model-bindings/option.ts",
+    "./dev/materialize/components/model-bindings/select.ts",
+    "./dev/materialize/components/side-nav.ts",
+    "./dev/materialize/components/tabs-routing.ts",
+    "./dev/materialize/components/tabs.ts",
     "./dev/materialize/custom-event-polyfill.ts",
+    "./dev/materialize/index.ts",
     "./dev/materialize/materialize-directive.ts",
-    "./dev/tests/mainBody.components.ts"
+    "./dev/tests/mainBody.components.spec.ts"
   ]
 }

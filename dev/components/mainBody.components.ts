@@ -1,5 +1,11 @@
 import {Component} from "@angular/core"
 import {DatePicker} from "../materialize/components/datepicker";
+import {Collapsible} from "../materialize/components/collapsible";
+import {Dialogs} from "../materialize/components/dialogs";
+import {Buttons} from "../materialize/components/buttons";
+import {Dropdown} from "../materialize/components/dropdown";
+import {Forms} from "../materialize/components/forms";
+import {Tabs} from "../materialize/components/tabs";
 
 @Component({
   selector: 'mainBody',
@@ -60,11 +66,31 @@ import {DatePicker} from "../materialize/components/datepicker";
         <div class="row">
           <datePicker></datePicker>
         </div>
+        <div class="row">
+          <collapsible></collapsible>
+        </div>
+        <div class="row">
+          <dialogs></dialogs>
+        </div>
+        <div class="row">
+          <buttons></buttons>
+        </div>
+        <div class="row">
+          <dropdown></dropdown>
+        </div>
+        <div class="row">
+          <forms></forms>
+        </div>
+        <div class="row">
+          <tabs></tabs>
+        </div>
+
+
 
       </div>
     </div>
     `,
-    directives:[DatePicker]
+    directives:[DatePicker,Collapsible,Dialogs,Buttons,Dropdown,Forms,Tabs]
 })
 export class MainBodyComponent {
 }
