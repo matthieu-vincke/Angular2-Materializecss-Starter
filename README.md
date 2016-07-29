@@ -1,8 +1,8 @@
 # Angular 2 - Materializecss - Starter
 
 ## Description
-This is a starter pack for Angular 2 application based on http://www.materializecss.com framework.
-This is based on the boiler plate for Angular2: https://github.com/mschwarzmueller/angular-2-beta-boilerplate and on the project Angular2 Materialize: https://github.com/InfomediaLtd/angular2-materialize
+This is a starter pack for Angular 2 application based on http://www.materializecss.com framework.  
+This has been built from the boiler plate for Angular2: https://github.com/mschwarzmueller/angular-2-beta-boilerplate and from the project Angular2 Materialize: https://github.com/InfomediaLtd/angular2-materialize
 
 ## Usage
 

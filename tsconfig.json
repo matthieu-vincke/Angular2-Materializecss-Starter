@@ -27,6 +27,9 @@
     "./dev/boot.ts",
     "./dev/components/footer.component.ts",
     "./dev/components/header.component.ts",
-    "./dev/components/mainBody.components.ts"
+    "./dev/components/mainBody.components.ts",
+    "./dev/materialize/components/datepicker.ts",
+    "./dev/materialize/custom-event-polyfill.ts",
+    "./dev/materialize/materialize-directive.ts"
   ]
 }

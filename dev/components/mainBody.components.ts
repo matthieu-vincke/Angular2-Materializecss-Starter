@@ -1,4 +1,5 @@
 import {Component} from "@angular/core"
+import {DatePicker} from "../materialize/components/datepicker";
 
 @Component({
   selector: 'mainBody',
@@ -56,10 +57,14 @@ import {Component} from "@angular/core"
       <br><br>
 
       <div class="section">
+        <div class="row">
+          <datePicker></datePicker>
+        </div>
 
       </div>
     </div>
-    `
+    `,
+    directives:[DatePicker]
 })
 export class MainBodyComponent {
 }
