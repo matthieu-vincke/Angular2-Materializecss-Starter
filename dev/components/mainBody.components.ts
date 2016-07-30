@@ -15,7 +15,7 @@ import {Modal} from "../materialize/components/modal";
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Angular2 & Materializecss  Starter</h1>
+        <h1 class="header center orange-text">Angular2 & Materialize css  Starter</h1>
         <div class="row center">
           <h5 class="header col s12 light">
           This has been built from the boiler plate for Angular2 from
@@ -97,7 +97,23 @@ import {Modal} from "../materialize/components/modal";
         <div class="row">
           <modal [parameters]="modalParameters"></modal>
         </div>
+        <div class="row">
+        <i class = "fa fa-adjust fa-2x"></i>
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
 
+        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+
+        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+
+        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+        </div>
 
       </div>
     </div>
