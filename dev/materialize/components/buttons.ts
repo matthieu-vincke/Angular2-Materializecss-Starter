@@ -7,9 +7,9 @@ import {Component} from "@angular/core"
         <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
         <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
         <br/>
-        <div class="fixed-action-btn horizontal click-to-toggle" style="top: 24px; right: 24px;">
+        <div class="fixed-action-btn horizontal click-to-toggle" style="top: 75px; right: 24px;">
           <a class="btn-floating btn-large red">
-            <i class="large mdi-navigation-menu"></i>
+            <i class="large material-icons">menu</i>
           </a>
           <ul>
             <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>

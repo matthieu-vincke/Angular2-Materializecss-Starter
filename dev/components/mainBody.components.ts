@@ -6,6 +6,7 @@ import {Buttons} from "../materialize/components/buttons";
 import {Dropdown} from "../materialize/components/dropdown";
 import {Forms} from "../materialize/components/forms";
 import {Tabs} from "../materialize/components/tabs";
+import {Modal} from "../materialize/components/modal";
 //import {ModelBindings} from "../materialize/components/model-bindings/model-bindings";
 
 @Component({
@@ -14,12 +15,17 @@ import {Tabs} from "../materialize/components/tabs";
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Starter Template</h1>
+        <h1 class="header center orange-text">Angular2 & Materializecss  Starter</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">
+          This has been built from the boiler plate for Angular2 from
+          <a href="https://github.com/mschwarzmueller/angular-2-beta-boilerplate" target="_blank">mschwarzmueller</a>
+           and from the project <a href="https://github.com/InfomediaLtd/angular2-materialize" target="_blank">Angular2 Materialize</a> <br/>
+          This is a starter pack for Angular 2 application based on <a href="http://www.materializecss.com" target="_blank">MaterializeCss</a>.
+          </h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+          <a href="https://github.com/matthieu-vincke/Angular2-Materializecss-Starter.git" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
         </div>
         <br><br>
 
@@ -37,25 +43,25 @@ import {Tabs} from "../materialize/components/tabs";
               <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
               <h5 class="center">Speeds up development</h5>
 
-              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+              <p class="light">Clone the repo, npm install, npm start, you are all set! <br/> Karma is also integrated for your tests!</p>
             </div>
           </div>
 
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">User Experience Focused</h5>
+              <h5 class="center">Angular2 rc4</h5>
 
-              <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+              <p class="light">Based on the latest RC of Angular2.</p>
             </div>
           </div>
 
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-              <h5 class="center">Easy to work with</h5>
+              <h5 class="center">MaterializeCss</h5>
 
-              <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+              <p class="light">The most beautifull implementation of Material Design</p>
             </div>
           </div>
         </div>
@@ -65,10 +71,13 @@ import {Tabs} from "../materialize/components/tabs";
 
       <div class="section">
         <div class="row">
-          <datePicker></datePicker>
+          <h3>Various components below</h3>
         </div>
         <div class="row">
-          <collapsible></collapsible>
+          <datePicker [params]="[{format:'yyyy-mm-dd'}]"></datePicker>
+        </div>
+        <div class="row">
+          <collapsible [elements]="collapsibleElements"></collapsible>
         </div>
         <div class="row">
           <dialogs></dialogs>
@@ -77,7 +86,7 @@ import {Tabs} from "../materialize/components/tabs";
           <buttons></buttons>
         </div>
         <div class="row">
-          <dropdown></dropdown>
+          <dropdown [elements]="dropdownElements"></dropdown>
         </div>
         <div class="row">
           <forms></forms>
@@ -85,12 +94,37 @@ import {Tabs} from "../materialize/components/tabs";
         <div class="row">
           <tabs></tabs>
         </div>
+        <div class="row">
+          <modal [parameters]="modalParameters"></modal>
+        </div>
 
 
       </div>
     </div>
     `,
-    directives:[DatePicker,Collapsible,Dialogs,Buttons,Dropdown,Forms,Tabs]
+    directives:[DatePicker,Collapsible,Dialogs,Buttons,Dropdown,Forms,Tabs,Modal]
 })
 export class MainBodyComponent {
+  // For Icons: http://materializecss.com/icons.html
+  collapsibleElements = [
+    {icon:'filter_drama',header:'First element from Body',content:'This is the content of the first element'},
+    {icon:'language',header:'Second element from Body',content:'This is the content of the second element'},
+    {icon:'location_on',header:'Third element from Body',content:'This is the content of the third element'}
+  ];
+  dropdownElements = {
+    id:"myId",
+    header:"Drop me",
+    data:[
+      {link:'#!',label:'First element from Body'},
+      {link:'#!',label:'Second element from Body'}
+    ]
+  };
+  modalParameters = {
+    id:'modalId',
+    btnLabel:'Modal from body',
+    header:'Modal header  from body',
+    content:'Modal content from body',
+    closeBtnLabel:'Close'
+  }
+
 }

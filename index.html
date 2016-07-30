@@ -26,6 +26,15 @@
 <my-app>Loading...</my-app>
 
 <script>
+    System.config({
+        defaultJSExtensions: true,
+        packages: {
+            "materialize": {
+                "main": "materialize/materialize-directive",
+                "defaultExtension": "js"
+            }
+        }
+    });
     System.import('app/boot')
             .then(null, console.error.bind(console));
 </script>

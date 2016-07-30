@@ -1,19 +1,27 @@
 import {Component} from "@angular/core"
+import {MaterializeDirective} from "../materialize/index";
 
 @Component({
   selector: 'header',
+  directives: [MaterializeDirective],
   template:
   `
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a materialize="sideNav" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">A mobile</a></li>
+        <li><a href="#">B mobile</a></li>
+        <li><a href="#">C mobile</a></li>
+        <li><a href="#">D mobile</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   `

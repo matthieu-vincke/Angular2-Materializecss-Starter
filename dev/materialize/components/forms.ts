@@ -37,7 +37,7 @@ import {Component,OnInit} from "@angular/core"
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">account_circle</i>
-              <input id="icon_prefix" type="text" class="validate">
+              <input [(ngModel)]="firstName" id="icon_prefix" type="text" class="validate">
               <label for="icon_prefix">First Name</label>
             </div>
             <div class="input-field col s6">
@@ -45,9 +45,6 @@ import {Component,OnInit} from "@angular/core"
               <input id="icon_telephone" type="tel" class="validate">
               <label for="icon_telephone">Telephone</label>
             </div>
-          </div>
-          <div class="row">
-            <input materialize="pickadate" type="date" class="datepicker">
           </div>
           <div class="row">
             <div class="input-field col s12">
@@ -82,7 +79,7 @@ import {Component,OnInit} from "@angular/core"
             </div>
           </div>
         </form>
-        <br/><hr/><hr/><br/>
+        <br/>
         <div class="row">
           <div class="col s6">First Name: {{firstName}}</div>
         </div>
@@ -92,8 +89,8 @@ import {Component,OnInit} from "@angular/core"
     `
 })
 export class Forms implements OnInit {
-  private firstName = "";
-  private selectedOption = "";
+  private firstName = "n/a";
+  private selectedOption = "n/a";
 
   private selectOptions = [];
 

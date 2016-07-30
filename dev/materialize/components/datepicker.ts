@@ -1,5 +1,5 @@
 import {MaterializeDirective} from "../index";
-import {Component} from "@angular/core"
+import {Component, Input} from "@angular/core"
 
 @Component({
     selector: "datePicker",
@@ -11,7 +11,7 @@ import {Component} from "@angular/core"
             <label for="birthdate">Birthdate</label>
             <input id="birthdate"
                    materialize="pickadate"
-                   [materializeParams]="[{selectMonths: true, selectYears: 15}]"
+                   [materializeParams]="params"
                    type="text" />
           </div>
         </div>
@@ -19,6 +19,7 @@ import {Component} from "@angular/core"
     `
 })
 export class DatePicker {
+  @Input() params = [{selectMonths: true, selectYears: 15, format:"yyyy/mm/dd"}];
   constructor(){
   }
 }
