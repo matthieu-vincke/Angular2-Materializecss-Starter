@@ -1,3 +1,6 @@
+Sources on Github: [Angular2-Materializecss-Starter](https://github.com/matthieu-vincke/Angular2-Materializecss-Starter)  
+
+
 # Angular 2 - Materializecss - Starter
 
 ## Description
