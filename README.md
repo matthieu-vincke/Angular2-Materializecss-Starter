@@ -8,7 +8,7 @@ This has been built from the boiler plate for Angular2: https://github.com/mschw
 
 1: Clone repo
 ```
-git clone
+git clone git@github.com:matthieu-vincke/Angular2-Materializecss-Starter.git
 ```
 2: Install packages
 ```
