@@ -1,17 +1,20 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
-<head>
-    <base href="/">
-    <title>Angular 2 - Materializecss - Starter</title>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Load libraries -->
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
+
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <script src="systemjs.config.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,25 +22,15 @@
 
     <!--Import materialize.css-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
-    <link rel="stylesheet" href="src/css/app.css">
+    
     <link rel="stylesheet" href="assets/css/font-awesome.css">
-</head>
-<body>
-<my-app>Loading...</my-app>
 
-<script>
-    System.config({
-        defaultJSExtensions: true,
-        packages: {
-            "materialize": {
-                "main": "materialize/materialize-directive",
-                "defaultExtension": "js"
-            }
-        }
-    });
-    System.import('app/boot')
-            .then(null, console.error.bind(console));
-</script>
-</body>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
 </html>
