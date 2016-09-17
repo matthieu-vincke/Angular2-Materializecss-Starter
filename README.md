@@ -5,7 +5,7 @@ Sources on Github: [Angular2-Materializecss-Starter](https://github.com/matthieu
 
 ## Description
 This is a starter pack for Angular 2 application based on http://www.materializecss.com framework.  
-This has been built from the boiler plate for Angular2: https://github.com/mschwarzmueller/angular-2-beta-boilerplate and from the project Angular2 Materialize: https://github.com/InfomediaLtd/angular2-materialize
+This has been built from the quickstart for Angular2 of Google: https://github.com/angular/quickstart and from the project Angular2 Materialize: https://github.com/InfomediaLtd/angular2-materialize
 
 ## Usage
 
@@ -21,7 +21,7 @@ npm install
 ```
 npm start
 ```
-4: Start the tests with Karma
+4: Start the tests
 ```
 npm test
 ```

@@ -1,48 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "system",
+    "target": "es5",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "outDir": "./app"
-  },
-  "filesGlob": [
-    "./dev/**/*.ts",
-    "!./node_modules/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "typings/main",
-    "typings/main.d.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  },
-  "files": [
-    "./dev/app.component.ts",
-    "./dev/boot.ts",
-    "./dev/components/footer.component.ts",
-    "./dev/components/header.component.ts",
-    "./dev/components/mainBody.components.ts",
-    "./dev/materialize/components/buttons.ts",
-    "./dev/materialize/components/collapsible.ts",
-    "./dev/materialize/components/datepicker.ts",
-    "./dev/materialize/components/dialogs.ts",
-    "./dev/materialize/components/dropdown.ts",
-    "./dev/materialize/components/forms.ts",
-    "./dev/materialize/components/modal.ts",
-    "./dev/materialize/components/model-bindings/input.ts",
-    "./dev/materialize/components/model-bindings/model-bindings.ts",
-    "./dev/materialize/components/model-bindings/option.ts",
-    "./dev/materialize/components/model-bindings/select.ts",
-    "./dev/materialize/components/tabs.ts",
-    "./dev/materialize/custom-event-polyfill.ts",
-    "./dev/materialize/index.ts",
-    "./dev/materialize/materialize-directive.ts",
-    "./dev/tests/mainBody.components.spec.ts"
-  ]
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
 }
